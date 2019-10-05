@@ -4,14 +4,18 @@ import clean from './clean';
 import sass from './sass';
 import cssurl from './cssurl';
 import nunjucks from './nunjucks';
-import copytranslations from './copytranslations';
+import copyconfig from './copyconfig';
+import mergetranslations from './mergetranslations';
+// import copytranslations from './copytranslations';
 
 export default gulp.series(
   clean,
   gulp.parallel(
     sass,
     nunjucks,
-    copytranslations,
+    copyconfig,
+    mergetranslations,
+    // copytranslations,
   ),
   cssurl,
 );

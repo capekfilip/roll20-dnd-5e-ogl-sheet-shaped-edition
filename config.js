@@ -14,4 +14,5 @@ export const dist = {
   styles: `${basePath.dist}css/`,
   html: `${basePath.dist}html/`,
   translations: `${basePath.dist}translations/`,
+  config: `${basePath.dist}config/`,
 };
