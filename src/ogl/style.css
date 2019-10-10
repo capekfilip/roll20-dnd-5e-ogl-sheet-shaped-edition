@@ -2176,6 +2176,14 @@ span.sheet-spellconcentration
     width: 81%;
 }
 
+/*
+Fix for Global Damage Modifier
+By Miguel
+*/
+.sheet-rolltemplate-dmg .sheet-desc {
+    width: 100%;
+}
+
 .sheet-rolltemplate-atk .sheet-desc span,
 .sheet-rolltemplate-atkdmg .sheet-desc span,
 .sheet-rolltemplate-dmg .sheet-desc span,
