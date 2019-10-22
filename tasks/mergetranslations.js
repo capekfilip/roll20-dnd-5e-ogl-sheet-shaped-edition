@@ -5,7 +5,7 @@ import * as config from '../config';
 
 export default () => {
   const stream = gulp.src([
-    'ogl/translation.json',
+    'ogl/_translation.json',
     'translations/translation.json',
   ], {
     cwd: config.basePath.src,
