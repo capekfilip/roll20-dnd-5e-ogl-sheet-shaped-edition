@@ -459,8 +459,8 @@ button[type=roll] * {
 
 .sheet-attr-mod input {
     text-align: center;
-    /*    width: 100%;
-        height: 20px;*/
+/*    width: 100%;
+    height: 20px;*/
     font-size: 20px;
     margin: 0px;
     padding: 0px;
@@ -2181,7 +2181,7 @@ Fix for Global Damage Modifier
 By Miguel
 */
 .sheet-rolltemplate-dmg .sheet-desc {
-    width: 100%;
+  width: 100%;
 }
 
 .sheet-rolltemplate-atk .sheet-desc span,
@@ -4737,8 +4737,8 @@ div.sheet-globaldisplay span {
 }
 
 .sheet-pc .sheet-global-mod .sheet-active-flag {
-    position: relative;
-    top: -5px;
+  position: relative;
+  top: -5px;
 }
 
 .sheet-pc .sheet-global-mod .sheet-options-flag:checked ~ .sheet-active-flag {
