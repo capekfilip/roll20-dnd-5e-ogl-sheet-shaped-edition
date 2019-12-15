@@ -1,5 +1,7 @@
 {
   "to-hit": "to hit",
   "range": "range",
-  "ft": "ft."
+  "ft": "ft.",
+  "saving-throw-l": "saving throw",
+  "saving-throw-success": "Saving throw success"
 }

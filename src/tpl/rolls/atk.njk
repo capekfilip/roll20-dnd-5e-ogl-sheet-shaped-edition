@@ -14,97 +14,97 @@
             </div>
             <div class="box-inner">
                 <div class="rt-title-wrap">
-                <span class="rt-title">
-                    <span class="rt-title-name">
-                        {{#normal}}
-                        {{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}
-                        {{#^rollWasCrit() r1}}{{rname}}{{/^rollWasCrit() r1}}
-                        {{/normal}}
-                        {{#always}}
-                        {{#rollLess() r1 r2}}{{#rollWasCrit() r2}}{{rnamec}}{{/rollWasCrit() r2}}{{/rollLess() r1 r2}}
-                        {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
-                        {{#rollGreater() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollGreater() r1 r2}}
-                        {{#^rollWasCrit() r1}}{{#^rollWasCrit() r2}}{{rname}}{{/^rollWasCrit() r2}}{{/^rollWasCrit() r1}}
-                        {{/always}}
-                        {{#advantage}}
-                        {{#rollLess() r1 r2}}{{#rollWasCrit() r2}}{{rnamec}}{{/rollWasCrit() r2}}{{/rollLess() r1 r2}}
-                        {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
-                        {{#rollGreater() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollGreater() r1 r2}}
-                        {{#^rollWasCrit() r1}}{{#^rollWasCrit() r2}}{{rname}}{{/^rollWasCrit() r2}}{{/^rollWasCrit() r1}}
-                        {{/advantage}}
-                        {{#disadvantage}}
-                        {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
-                        {{#rollTotal() r1 r2}}{{#^rollWasCrit() r1}}{{rname}}{{/^rollWasCrit() r1}}{{/rollTotal() r1 r2}}
-                        {{#rollLess() r1 r2}}{{rname}}{{/rollLess() r1 r2}}
-                        {{#rollGreater() r1 r2}}{{rname}}{{/rollGreater() r1 r2}}
-                        {{/disadvantage}}
-                    </span>
-                    <span class="inline-block">
-                        <span class="shaped-row uses-recharge-cost-wrap">
-                            {{#innate}}
-                                <span>&nbsp;(</span>
-                                <span>{{innate}}</span>
-                                <span>)</span>
-                            {{/innate}}
+                    <span class="rt-title">
+                        <span class="rt-title-name">
+                            {{#normal}}
+                                {{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}
+                                {{#^rollWasCrit() r1}}{{rname}}{{/^rollWasCrit() r1}}
+                            {{/normal}}
+                            {{#always}}
+                                {{#rollLess() r1 r2}}{{#rollWasCrit() r2}}{{rnamec}}{{/rollWasCrit() r2}}{{/rollLess() r1 r2}}
+                                {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
+                                {{#rollGreater() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollGreater() r1 r2}}
+                                {{#^rollWasCrit() r1}}{{#^rollWasCrit() r2}}{{rname}}{{/^rollWasCrit() r2}}{{/^rollWasCrit() r1}}
+                            {{/always}}
+                            {{#advantage}}
+                                {{#rollLess() r1 r2}}{{#rollWasCrit() r2}}{{rnamec}}{{/rollWasCrit() r2}}{{/rollLess() r1 r2}}
+                                {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
+                                {{#rollGreater() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollGreater() r1 r2}}
+                                {{#^rollWasCrit() r1}}{{#^rollWasCrit() r2}}{{rname}}{{/^rollWasCrit() r2}}{{/^rollWasCrit() r1}}
+                            {{/advantage}}
+                            {{#disadvantage}}
+                                {{#rollTotal() r1 r2}}{{#rollWasCrit() r1}}{{rnamec}}{{/rollWasCrit() r1}}{{/rollTotal() r1 r2}}
+                                {{#rollTotal() r1 r2}}{{#^rollWasCrit() r1}}{{rname}}{{/^rollWasCrit() r1}}{{/rollTotal() r1 r2}}
+                                {{#rollLess() r1 r2}}{{rname}}{{/rollLess() r1 r2}}
+                                {{#rollGreater() r1 r2}}{{rname}}{{/rollGreater() r1 r2}}
+                            {{/disadvantage}}
+                        </span>
+                        <span class="inline-block">
+                            <span class="shaped-row uses-recharge-cost-wrap">
+                                {{#innate}}
+                                    <span>&nbsp;(</span>
+                                    <span>{{innate}}</span>
+                                    <span>)</span>
+                                {{/innate}}
+                            </span>
                         </span>
                     </span>
-                </span>
                 </div>
                 <div class="rt-subheader">
                     {{#charname}}
-                    <div class="rt-character-name">{{charname}}</div>
+                        <div class="rt-character-name">{{charname}}</div>
                     {{/charname}}
                 </div>
                 <div class="rt-content">
                     {{#r1}}
-                    <div class="shaped-row align-flex-end">
-                        {{#always}}
-                        <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/always}}
-                        {{#normal}}
-                        <span class="output">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/normal}}
-                        {{#advantage}}
-                        {{#rollLess() r1 r2}}
-                        <span class="output pad-r-md grey">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollLess() r1 r2}}
-                        {{#rollTotal() r1 r2}}
-                        <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollTotal() r1 r2}}
-                        {{#rollGreater() r1 r2}}
-                        <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left grey">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollGreater() r1 r2}}
-                        {{/advantage}}
-                        {{#disadvantage}}
-                        {{#rollLess() r1 r2}}
-                        <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left grey">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollLess() r1 r2}}
-                        {{#rollTotal() r1 r2}}
-                        <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollTotal() r1 r2}}
-                        {{#rollGreater() r1 r2}}
-                        <span class="output pad-r-md grey">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
-                        {{/rollGreater() r1 r2}}
-                        {{/disadvantage}}
+                        <div class="shaped-row align-flex-end">
+                            {{#always}}
+                                <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                            {{/always}}
+                            {{#normal}}
+                                <span class="output">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                            {{/normal}}
+                            {{#advantage}}
+                                {{#rollLess() r1 r2}}
+                                    <span class="output pad-r-md grey">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollLess() r1 r2}}
+                                {{#rollTotal() r1 r2}}
+                                    <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollTotal() r1 r2}}
+                                {{#rollGreater() r1 r2}}
+                                    <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left grey">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollGreater() r1 r2}}
+                            {{/advantage}}
+                            {{#disadvantage}}
+                                {{#rollLess() r1 r2}}
+                                    <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left grey">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollLess() r1 r2}}
+                                {{#rollTotal() r1 r2}}
+                                    <span class="output pad-r-md">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollTotal() r1 r2}}
+                                {{#rollGreater() r1 r2}}
+                                    <span class="output pad-r-md grey">{{r1}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                    <span class="output pad-l-md border-left">{{r2}}{{#globalattack}} + {{globalattack}}{{/globalattack}}</span>
+                                {{/rollGreater() r1 r2}}
+                            {{/disadvantage}}
 
-                        <span>&nbsp;</span>
-                        <span data-i18n="to-hit"></span>
-                        {{#range}}
-                            <span>,&nbsp;</span>
-                            <span data-i18n="range"></span>
                             <span>&nbsp;</span>
-                            <span>{{range}}</span>
-                            <span>&nbsp;</span>
-                            <span data-i18n="ft"></span>
-                        {{/range}}
-                    </div>
+                            <span data-i18n="to-hit"></span>
+                            {{#range}}
+                                <span>,&nbsp;</span>
+                                <span data-i18n="range"></span>
+                                <span>&nbsp;</span>
+                                <span>{{range}}</span>
+                                <span>&nbsp;</span>
+                                <span data-i18n="ft"></span>
+                            {{/range}}
+                        </div>
                     {{/r1}}
                     {{#desc}}
                         <div class="no-border">{{desc}}</div>

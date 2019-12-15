@@ -1,0 +1,57 @@
+<rolltemplate class="sheet-rolltemplate-5e-shaped-atk">
+    <div class="sheet-rolltemplate-5e-shaped">
+        <div class="rt-card boring-box-wrapper">
+            <div class="grid-box boring-box">
+                <div class="boring-box-top-left"></div>
+                <div class="boring-box-expand-top"></div>
+                <div class="boring-box-top-right"></div>
+                <div class="boring-box-expand-left"></div>
+                <div class="box-middle"></div>
+                <div class="boring-box-expand-right"></div>
+                <div class="boring-box-bottom-left"></div>
+                <div class="boring-box-expand-bottom"></div>
+                <div class="boring-box-bottom-right"></div>
+            </div>
+            <div class="box-inner">
+                <div class="rt-title-wrap">
+                    <span class="rt-title">
+                        <span class="rt-title-name">{{rname}}</span>
+                        <span class="inline-block">
+                            <span class="shaped-row uses-recharge-cost-wrap">
+                                {{#innate}}
+                                    <span>&nbsp;(</span>
+                                    <span>{{innate}}</span>
+                                    <span>)</span>
+                                {{/innate}}
+                            </span>
+                        </span>
+                    </span>
+                </div>
+                <div class="rt-subheader">
+                    {{#charname}}
+                        <div class="rt-character-name">{{charname}}</div>
+                    {{/charname}}
+                </div>
+                <div class="rt-content">
+                    {{#save}}
+                        <div>
+                            <span class="output">
+                                <span data-i18n="difficulty-class-abv"></span>
+                                <span>{{savedc}}</span>
+                                <span>{{saveattr}}</span>
+                                <span data-i18n="saving-throw-l"></span>
+                            </span>
+                        </div>
+                        {{#savedesc}}
+                            <div class="italic"><span data-i18n="saving-throw-success"></span>:</div>
+                            <div>{{savedesc}}</div>
+                        {{/savedesc}}
+                    {{/save}}
+                    {{#desc}}
+                        <div class="no-border">{{desc}}</div>
+                    {{/desc}}
+                </div>
+            </div>
+        </div>
+    </div>
+</rolltemplate>
